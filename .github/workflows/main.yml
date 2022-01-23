@@ -47,4 +47,5 @@ jobs:
         uses: Azure/k8s-deploy@v1.5
         with:
           images: filincowsky/rotten-potatoes:${{ github.run_number }}
-          manifests: k8s/deployment.yaml
+          manifests: |
+            k8s/deployment.yaml
