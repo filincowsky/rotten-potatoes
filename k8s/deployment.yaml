@@ -58,7 +58,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: filincowsky/rotten-potatoes:v1
+          image: filincowsky/rotten-potatoes:latest
           ports:
           - containerPort: 5000
           env:
@@ -88,4 +88,4 @@ spec:
   - port: 80
     targetPort: 5000
     nodePort: 30000
-  type: NodePort
+  type: LoadBalancer
